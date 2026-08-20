@@ -20,3 +20,13 @@ enum priority{
 }
  const thisWork = priority.high
  console.log(thisWork)
+
+const enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+
+let code = Direction.Right;
+ console.log(code)
