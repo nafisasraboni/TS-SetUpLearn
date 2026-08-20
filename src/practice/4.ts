@@ -1,5 +1,5 @@
 /* Problem statement: Create a type alias PaymentMethod = "cash" | "card" | "mobile". Comment why interface can't express this. Create an Order interface using PaymentMethod.
-Input: let method: PaymentMethod = "card";
+Input: let method: PaymentMethod = "card";Output: Order object like { id: 1, method: "card" }, type-checked successfully
  */
 
 type PaymentMethod =  "cash" | "card" | "mobile";
@@ -7,17 +7,13 @@ type PaymentMethod =  "cash" | "card" | "mobile";
 //Interface can't express this because this is union type. and interface can not represent unions
 
 interface Order{
-    name : string,
-    quantity : number,
-    price : number,
+    id: number,
     paymentMethod : PaymentMethod;
 }
 
-let foodOrder:Order={
-    name : "Burger",
-    quantity:1,
-    price:299,
+let method:Order={
+    id:1,
     paymentMethod:"card"
 }
 
-console.log(foodOrder)
+console.log(method)
