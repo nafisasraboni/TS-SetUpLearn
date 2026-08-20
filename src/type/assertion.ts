@@ -24,5 +24,5 @@ let flower = {
     color : "Yellow"
 }as const;
 
-flower.color="red"
+//flower.color="red"
 console.log(flower.color)
