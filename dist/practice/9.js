@@ -11,5 +11,4 @@ const appConfig = {
 //appConfig.theme = "Light" 
 //Cannot assign to 'theme' because it is a read-only property 
 let array = ["red", "green", "blue"];
-console.log(typeof array[0]);
 //# sourceMappingURL=9.js.map
